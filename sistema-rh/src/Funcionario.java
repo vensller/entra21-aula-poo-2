@@ -13,4 +13,8 @@ public abstract class Funcionario {
         System.out.println("Nome: " + nome);
         System.out.println("Salário base: " + salarioBase);
     }
+
+    public String getNome() {
+        return nome;
+    }
 }

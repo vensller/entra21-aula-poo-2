@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Rh recursosHumanos = new Rh();
+        INotificador notificador = new NotificadorWhatsapp();
+        Rh recursosHumanos = new Rh(notificador);
         Funcionario programador = new Programador(
                 "William",
                 10000.0,
